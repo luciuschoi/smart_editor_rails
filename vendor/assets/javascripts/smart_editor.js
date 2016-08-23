@@ -1,7 +1,7 @@
 //= require HuskyEZCreator
 
 var oEditors = [];
-$(document).ready(function(event){
+$(document).on('ready page:load', function(event) {
   if($(".smart-editor-text-area").length > 0){
     var $smartEditorTextArea = $(".smart-editor-text-area")
     var textAreaId = $smartEditorTextArea.attr("id");
